@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="Sudoku.js"></script>
+        <script type="text/javascript" src="puzzles.json" defer></script>
+        <script type="text/javascript" src="main.js" defer></script>
+    </head>
+    <body>
+        <h1>Sudoku Game</h1>
+        <main class="main">
+            <p id="intro">This is a Sudoku game made by Chao Chun Lai!</p>
+            <div id="timer">00:00:00</div>
+
+            <div class="btn-group">
+                <input type="radio" id="easy" name="difficulty" checked /><label
+                    for="easy"
+                    >Easy</label
+                >
+                <input type="radio" id="medium" name="difficulty" /><label
+                    for="medium"
+                    >Medium</label
+                >
+                <input type="radio" id="hard" name="difficulty" /><label
+                    for="hard"
+                    >Hard</label
+                >
+                <button class="btn" type="button" id="new_game">
+                    New Game
+                </button>
+                <button class="btn" type="button" id="reset">Reset</button>
+            </div>
+
+            <table id="grid"></table>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+h1 {
+    position: relative;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#intro,
+#timer {
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table {
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+    border: 5px solid black;
+    margin-top: 20px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td input {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.btn-group {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.btn-group input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 100;
+}
+
+.btn-group label,
+.btn {
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.btn-group label:hover,
+.btn {
+    cursor: pointer;
+}
+
+.btn-group input:checked + label {
+    background-color: #a5dc86;
+    box-shadow: none;
+}
+
+.btn-group label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.btn-group label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+.btn {
+    margin-left: 10px;
+    border-radius: 4px 4px 4px 4px;
+    outline: 0;
+}
